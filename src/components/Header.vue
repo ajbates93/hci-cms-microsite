@@ -1,13 +1,14 @@
 <script setup lang="ts">
-  import { useToggle, useDark } from '@vueuse/core'
+  import { useToggle, useDark, useWindowScroll } from '@vueuse/core'
   const isDark = useDark()
   const toggleDark = useToggle(isDark)
   const imageUrl = "./images/logo.png"
   const imageUrlLight = "./images/logo-light.svg"
+  const { x, y } = useWindowScroll()
 </script>
 
 <template>
-  <header fixed top-0 w-full>
+  <header absolute top-0 w-full>
     <nav flex items-start justify-between p5>
       <picture max-w-30 inline-block w-full>
         <img :src="isDark ? imageUrl : imageUrlLight" alt="logo" title="HCI York" />
