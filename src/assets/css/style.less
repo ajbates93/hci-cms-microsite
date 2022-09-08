@@ -11,4 +11,21 @@ html {
   &.dark {
     background-color: rgb(15 23 42);
   }
+
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+// helper utilities
+
+html.dark {
+  #divider svg {
+    fill: #0f172a;
+  }
+}
+html {
+  #divider svg {
+    fill: #eee;
+  }
 }
