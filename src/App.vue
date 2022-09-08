@@ -2,11 +2,8 @@
 import Banner from "./components/Banner.vue";
 import Header from "./components/Header.vue";
 import DarkDivider from "./components/DarkDivider.vue";
-import { ref } from 'vue'
-import { useElementVisibility } from "@vueuse/core";
+import Features from "./components/Features.vue";
 
-const target = ref<HTMLDivElement>()
-const targetIsVisible = useElementVisibility(target)
 
 </script>
 
@@ -15,12 +12,7 @@ const targetIsVisible = useElementVisibility(target)
   <Banner />
   <main id="main" role="main" dark:bg-white bg-slate-3 transition min-h-300 text-center>
     <DarkDivider />
-    <div ref="target" :class="targetIsVisible ? ['active'] : ''">
-      <div>Fully Bespoke</div>
-      <div>Membership Management</div>
-      <div>Daily & Weekly Backups</div>
-      <div>Cloud Based</div>
-    </div>
+    <Features />
   </main>
 </template>
 
