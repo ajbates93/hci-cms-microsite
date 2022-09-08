@@ -10,7 +10,7 @@ import Features from "./components/Features.vue";
 <template>
   <Header />
   <Banner />
-  <main id="main" role="main" dark:bg-white bg-slate-3 transition min-h-300 text-center>
+  <main id="main" role="main" dark:bg-slate-7 bg-slate-3 transition min-h-300 text-center>
     <DarkDivider />
     <Features />
   </main>
