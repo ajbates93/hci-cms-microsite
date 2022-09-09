@@ -14,9 +14,15 @@ html {
 html.dark {
   background-color: #0f172a;
 }
-html.dark #divider svg {
+html.dark #divider.dark svg {
   fill: #0f172a;
 }
-html #divider svg {
+html.dark #divider.light svg {
+  fill: rgba(51, 65, 85);
+}
+html #divider.dark svg {
   fill: #eee;
+}
+html #divider.light svg {
+  fill: #ddd;
 }

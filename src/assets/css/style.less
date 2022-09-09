@@ -20,12 +20,22 @@ html {
 // helper utilities
 
 html.dark {
-  #divider svg {
-    fill: #0f172a;
-  }
+  #divider { 
+    &.dark svg {
+      fill: #0f172a;
+    }
+    &.light svg {
+      fill: rgba(51,65,85);
+    }
+}
 }
 html {
-  #divider svg {
-    fill: #eee;
+  #divider {
+    &.dark svg {
+      fill: #eee;
+    }
+    &.light svg {
+      fill: #ddd;
+    }
   }
 }

@@ -7,7 +7,7 @@ const targetIsVisible = useElementVisibility(features)
 </script>
 
 <template>
-  <section ref="features" transition opacity-0 dark:text="#fff"
+  <div ref="features" transition opacity-0 dark:text="#fff"
     max-w-300 mx-auto px10
     :class="targetIsVisible ? ['active opacity-100'] : ''">
     <div class="section" mb15 text-left flex justify-between>
@@ -40,7 +40,7 @@ const targetIsVisible = useElementVisibility(features)
       <div text-5xl mb5 font-bold class="feature-title">Cloud Based</div>
       <div text-xl mb5 font-mono class="feature-subtitle">Something about cloud lorem ipsum delorum</div>
     </div>
-  </section>
+  </div>
 </template>
 
 <style scoped>
