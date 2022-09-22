@@ -16,8 +16,8 @@ import Pricing from "./components/Pricing.vue";
     <section id="features">
       <Features />
     </section>
+    <Divider theme="light" flip />
     <section id="pricing" dark:bg-dark bg-white>
-      <Divider theme="dark" flip />
       <Pricing />
     </section>
   </main>
